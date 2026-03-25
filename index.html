@@ -1198,9 +1198,17 @@
 
    <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="बिरयानी">🍚 Biryani Special</button>
-<button class="tab" data-cat="स्टार्टर">🍗 Starters</button>
-              </div>  
+<button class="tab" data-cat="STARTER">🍟 Starters (Veg)</button>
+<button class="tab" data-cat="SPECIAL VEG">🥘 Special Veg</button>
+<button class="tab" data-cat="ROTI">🫓 Roti / Naan</button>
+<button class="tab" data-cat="RICE">🍚 Rice Special</button>
+<button class="tab" data-cat="BIRYANI">🍲 Biryani</button>
+<button class="tab" data-cat="ANDA KA FUNDA">🍳 Anda Ka Funda</button>
+<button class="tab" data-cat="CHICKEN">🍗 Chicken Main Course</button>
+<button class="tab" data-cat="CHICKEN STARTER">🔥 Chicken Starters</button>
+<button class="tab" data-cat="MUTTON">🥩 Mutton Special</button>
+<button class="tab" data-cat="PAPAD">🥗 Papad & Sides</button>
+               </div>  
                 </div>
             </div>
 
@@ -1346,11 +1354,131 @@
         const data = [
 
 
+  {"id": 1, "cat": "STARTER", "name": "Paneer Chilli | पनीर चिल्ली", "price": "200/-", "desc": "Spicy and crispy paneer cubes tossed in chilli sauce", "tags": ["Veg", "Starter"], "img": "img/paneer_chilli.jpeg"},
+  {"id": 2, "cat": "STARTER", "name": "Masala Papad | मसाला पापड", "price": "50/-", "desc": "Crunchy papad topped with spicy onion and tomato", "tags": ["Veg", "Starter"], "img": "img/masala_papad.jpeg"},
+  {"id": 3, "cat": "STARTER", "name": "Roasted Masala Papad | रोस्टेड मसाला पापड", "price": "40/-", "desc": "Roasted papad with spicy masala topping", "tags": ["Veg", "Starter"], "img": "img/roasted_masala_papad.jpeg"},
+  {"id": 4, "cat": "STARTER", "name": "Green Salad | ग्रीन सलाद", "price": "50/-", "desc": "Fresh seasonal sliced vegetables", "tags": ["Veg", "Starter"], "img": "img/green_salad.jpeg"},
+  {"id": 5, "cat": "STARTER", "name": "Chana Fry Dry | चना फ्राय ड्राय", "price": "150/-", "desc": "Crispy fried chickpeas with dry spices", "tags": ["Veg", "Starter"], "img": "img/chana_fry_dry.jpeg"},
+  {"id": 6, "cat": "STARTER", "name": "Chana Garlic | चना गार्लिक", "price": "170/-", "desc": "Fried chickpeas with a strong garlic flavor", "tags": ["Veg", "Starter"], "img": "img/chana_garlic.jpeg"},
+  {"id": 7, "cat": "STARTER", "name": "Chana Koliwada | चना कोळीवाडा", "price": "160/-", "desc": "Spicy deep fried chickpeas in Koliwada style", "tags": ["Veg", "Starter"], "img": "img/chana_koliwada.jpeg"},
+  {"id": 8, "cat": "STARTER", "name": "Finger Chips | फिंगर चिप्स", "price": "120/-", "desc": "Classic crispy potato french fries", "tags": ["Veg", "Starter"], "img": "img/finger_chips.jpeg"},
+  {"id": 9, "cat": "STARTER", "name": "Paneer Crispy | पनीर क्रिस्पी", "price": "250/-", "desc": "Deep fried paneer strips in a crunchy coating", "tags": ["Veg", "Starter"], "img": "img/paneer_crispy.jpeg"},
+  {"id": 10, "cat": "STARTER", "name": "Paneer Pakoda | पनीर पकोडा", "price": "200/-", "desc": "Soft paneer slices dipped in batter and deep fried", "tags": ["Veg", "Starter"], "img": "img/paneer_pakoda.jpeg"},
+  {"id": 11, "cat": "SPECIAL VEG", "name": "Dal Fry | डाल फ्राय", "price": "100/-", "desc": "Yellow lentils tempered with aromatic spices", "tags": ["Veg", "Main Course"], "img": "img/dal_fry.jpeg"},
+  {"id": 12, "cat": "SPECIAL VEG", "name": "Dal Tadka | डाल तडका", "price": "120/-", "desc": "Lentils cooked with a smoky tempering of spices", "tags": ["Veg", "Main Course"], "img": "img/dal_tadka.jpeg"},
+  {"id": 13, "cat": "SPECIAL VEG", "name": "Butter Dal Tadka | बटर डाल तडका", "price": "130/-", "desc": "Dal tadka finished with a rich dollop of butter", "tags": ["Veg", "Main Course"], "img": "img/butter_dal_tadka.jpeg"},
+  {"id": 14, "cat": "SPECIAL VEG", "name": "Akkha Masoor | अख्खा मसूर", "price": "150/-", "desc": "Whole brown lentils cooked in a spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/akkha_masoor.jpeg"},
+  {"id": 15, "cat": "SPECIAL VEG", "name": "Chana Masala | चना मसाला", "price": "150/-", "desc": "Chickpeas cooked in a traditional onion-tomato gravy", "tags": ["Veg", "Main Course"], "img": "img/chana_masala.jpeg"},
+  {"id": 16, "cat": "SPECIAL VEG", "name": "Aloo Matar | आलू मटार", "price": "150/-", "desc": "Potato and green peas cooked in a light curry", "tags": ["Veg", "Main Course"], "img": "img/aloo_matar.jpeg"},
+  {"id": 17, "cat": "SPECIAL VEG", "name": "Baigan Masala | बैंगन मसाला", "price": "150/-", "desc": "Roasted eggplant cooked with spicy masala", "tags": ["Veg", "Main Course"], "img": "img/baigan_masala.jpeg"},
+  {"id": 18, "cat": "SPECIAL VEG", "name": "Gobi Masala | गोबी मसाला", "price": "150/-", "desc": "Cauliflower florets cooked with Indian spices", "tags": ["Veg", "Main Course"], "img": "img/gobi_masala.jpeg"},
+  {"id": 19, "cat": "SPECIAL VEG", "name": "Aloo Gobi | आलू गोभी", "price": "150/-", "desc": "Classic combination of potatoes and cauliflower", "tags": ["Veg", "Main Course"], "img": "img/aloo_gobi.jpeg"},
+  {"id": 20, "cat": "SPECIAL VEG", "name": "Gobi Matar Masala | गोभी मटार मसाला", "price": "150/-", "desc": "Cauliflower and peas tossed in a spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/gobi_matar_masala.jpeg"},
+  {"id": 21, "cat": "SPECIAL VEG", "name": "Mix Veg | मिक्स व्हेज", "price": "180/-", "desc": "Assorted vegetables cooked in a rich gravy", "tags": ["Veg", "Main Course"], "img": "img/mix_veg.jpeg"},
+  {"id": 22, "cat": "SPECIAL VEG", "name": "Veg Kolhapuri | व्हेज कोल्हापुरी", "price": "200/-", "desc": "Extra spicy mixed vegetables in Kolhapuri style", "tags": ["Veg", "Main Course", "Spicy"], "img": "img/veg_kolhapuri.jpeg"},
+  {"id": 23, "cat": "SPECIAL VEG", "name": "Green Peas Masala | ग्रीन पीस मसाला", "price": "150/-", "desc": "Fresh green peas in a flavorful masala gravy", "tags": ["Veg", "Main Course"], "img": "img/green_peas_masala.jpeg"},
+  {"id": 24, "cat": "SPECIAL VEG", "name": "Shev Bhaji | शेव भाजी", "price": "150/-", "desc": "Crunchy sev served in a spicy curry", "tags": ["Veg", "Main Course"], "img": "img/shev_bhaji.jpeg"},
+  {"id": 25, "cat": "SPECIAL VEG", "name": "Dudh Shev Bhaji | दुध शेv भाजी", "price": "160/-", "desc": "Sev bhaji cooked with a creamy milk-based gravy", "tags": ["Veg", "Main Course"], "img": "img/dudh_shev_bhaji.jpeg"},
+  {"id": 26, "cat": "SPECIAL VEG", "name": "Paneer Masala | पनीर मसाला", "price": "180/-", "desc": "Soft paneer cubes cooked in a spiced gravy", "tags": ["Veg", "Main Course"], "img": "img/paneer_masala.jpeg"},
+  {"id": 27, "cat": "SPECIAL VEG", "name": "Butter Paneer Masala | बटर पनीर मसाला", "price": "200/-", "desc": "Paneer cubes in a rich and creamy buttery gravy", "tags": ["Veg", "Main Course"], "img": "img/butter_paneer_masala.jpeg"},
+  {"id": 28, "cat": "SPECIAL VEG", "name": "Matar Paneer | मटार पनीर", "price": "200/-", "desc": "Paneer and green peas cooked in a tomato-based curry", "tags": ["Veg", "Main Course"], "img": "img/matar_paneer.jpeg"},
+  {"id": 29, "cat": "SPECIAL VEG", "name": "Paneer Bhurji | पनीर बुर्जी", "price": "200/-", "desc": "Scrambled paneer cooked with onions, tomatoes and spices", "tags": ["Veg", "Main Course"], "img": "img/paneer_bhurji.jpeg"},
+  {"id": 30, "cat": "SPECIAL VEG", "name": "Paneer Tikka | पनीर टिक्का", "price": "250/-", "desc": "Grilled paneer marinated in yogurt and spices", "tags": ["Veg", "Main Course"], "img": "img/paneer_tikka.jpeg"},
+  {"id": 31, "cat": "SPECIAL VEG", "name": "Kaju Paneer | काजू पनीर", "price": "200/-", "desc": "Rich combination of paneer and cashew nuts", "tags": ["Veg", "Main Course"], "img": "img/kaju_paneer.jpeg"},
+  {"id": 32, "cat": "SPECIAL VEG", "name": "Kaju Masala | काजू मसाला", "price": "180/-", "desc": "Roasted cashews cooked in a spicy onion-tomato gravy", "tags": ["Veg", "Main Course"], "img": "img/kaju_masala.jpeg"},
+  {"id": 33, "cat": "SPECIAL VEG", "name": "Veg Makhanwala | व्हेज मख्खनवाला", "price": "200/-", "desc": "Mixed vegetables in a creamy and buttery tomato sauce", "tags": ["Veg", "Main Course"], "img": "img/veg_makhanwala.jpeg"},
+  {"id": 34, "cat": "SPECIAL VEG", "name": "Paneer Handi | पनीर हंडी", "price": "400/-", "desc": "Paneer cubes cooked in a traditional handi style", "tags": ["Veg", "Main Course", "Full"], "img": "img/paneer_handi.jpeg"},
+  {"id": 35, "cat": "SPECIAL VEG", "name": "Paneer Butter Handi | पनीर बटर हंडी", "price": "420/-", "desc": "Rich buttery paneer gravy served in a handi", "tags": ["Veg", "Main Course", "Full"], "img": "img/paneer_butter_handi.jpeg"},
+  {"id": 36, "cat": "SPECIAL VEG", "name": "Shahi Paneer Handi | शाही पनीर हंडी", "price": "450/-", "desc": "Royal shahi paneer preparation served in a handi", "tags": ["Veg", "Main Course", "Full"], "img": "img/shahi_paneer_handi.jpeg"},
+  {"id": 37, "cat": "SPECIAL VEG", "name": "Paneer Kaju Handi | पनीर काजू हंडी", "price": "450/-", "desc": "Luxurious paneer and kaju gravy served in a handi", "tags": ["Veg", "Main Course", "Full"], "img": "img/paneer_kaju_handi.jpeg"},
+  {"id": 38, "cat": "SPECIAL VEG", "name": "Paneer Tikka Handi | पनीर टिक्का हंडी", "price": "500/-", "desc": "Marinated paneer tikka pieces in a handi gravy", "tags": ["Veg", "Main Course", "Full"], "img": "img/paneer_tikka_handi.jpeg"},
+  {"id": 39, "cat": "SPECIAL VEG", "name": "Chole Masala | छोले मसाला", "price": "150/-", "desc": "Chickpeas cooked in a robust and spicy gravy", "tags": ["Veg", "Main Course"], "img": "img/chole_masala.jpeg"},
+  {"id": 40, "cat": "SPECIAL VEG", "name": "Kaju Matar | काजू मटार", "price": "130/-", "desc": "Cashews and peas cooked together in a light sauce", "tags": ["Veg", "Main Course"], "img": "img/kaju_matar.jpeg"},
+  {"id": 41, "cat": "SPECIAL VEG", "name": "Dal Fry Handi | डाल फ्राय हंडी", "price": "250/-", "desc": "Large portion of dal fry served in a handi", "tags": ["Veg", "Main Course", "Full"], "img": "img/dal_fry_handi.jpeg"},
+  {"id": 42, "cat": "SPECIAL VEG", "name": "Dal Tadka Handi | डाल तडका हंडी", "price": "270/-", "desc": "Smoky dal tadka in a handi serving", "tags": ["Veg", "Main Course", "Full"], "img": "img/dal_tadka_handi.jpeg"},
+  {"id": 43, "cat": "SPECIAL VEG", "name": "Chana Masala Handi | चना मसाला हंडी", "price": "350/-", "desc": "Chana masala served in a large handi portion", "tags": ["Veg", "Main Course", "Full"], "img": "img/chana_masala_handi.jpeg"},
 
 
-          
 
-          
+  {"id": 44, "cat": "ROTI", "name": "Roti | रोटी", "price": "20/-", "desc": "Plain tandoori roti", "tags": ["Veg", "Roti"], "img": "img/roti.jpeg"},
+  {"id": 45, "cat": "ROTI", "name": "Butter Roti | बटर रोटी", "price": "30/-", "desc": "Tandoori roti with a dollop of butter", "tags": ["Veg", "Roti"], "img": "img/butter_roti.jpeg"},
+  {"id": 46, "cat": "ROTI", "name": "Paratha | पराठा", "price": "30/-", "desc": "Layered whole wheat flatbread", "tags": ["Veg", "Roti"], "img": "img/paratha.jpeg"},
+  {"id": 47, "cat": "ROTI", "name": "Butter Paratha | बटर पराठा", "price": "40/-", "desc": "Layered flatbread with butter", "tags": ["Veg", "Roti"], "img": "img/butter_paratha.jpeg"},
+  {"id": 48, "cat": "ROTI", "name": "Nan | नान", "price": "40/-", "desc": "Soft and leavened tandoori bread", "tags": ["Veg", "Roti"], "img": "img/nan.jpeg"},
+  {"id": 49, "cat": "ROTI", "name": "Butter Nan | बटर नान", "price": "50/-", "desc": "Soft tandoori bread with butter", "tags": ["Veg", "Roti"], "img": "img/butter_nan.jpeg"},
+  {"id": 50, "cat": "ROTI", "name": "Masala Roti | मसाला रोटी", "price": "40/-", "desc": "Spicy tandoori roti", "tags": ["Veg", "Roti"], "img": "img/masala_roti.jpeg"},
+  {"id": 51, "cat": "ROTI", "name": "Garlic Masala Roti | गार्लिक मसाला रोटी", "price": "70/-", "desc": "Spicy roti with a strong garlic flavor", "tags": ["Veg", "Roti"], "img": "img/garlic_masala_roti.jpeg"},
+  {"id": 52, "cat": "ROTI", "name": "Butter Garlic Nan | बटर गार्लिक नान", "price": "70/-", "desc": "Butter nan infused with fresh garlic", "tags": ["Veg", "Roti"], "img": "img/butter_garlic_nan.jpeg"},
+  {"id": 53, "cat": "ROTI", "name": "Aloo Paratha | आलू पराठा", "price": "80/-", "desc": "Flatbread stuffed with spiced mashed potatoes", "tags": ["Veg", "Roti"], "img": "img/aloo_paratha.jpeg"},
+  {"id": 54, "cat": "RICE", "name": "Plain Rice (Half) | प्लेन राईस (हाफ)", "price": "50/-", "desc": "Simple steamed white rice - Half Portion", "tags": ["Veg", "Rice", "Half"], "img": "img/plain_rice_half.jpeg"},
+  {"id": 55, "cat": "RICE", "name": "Plain Rice (Full) | प्लेन राईस (फुल)", "price": "100/-", "desc": "Simple steamed white rice - Full Portion", "tags": ["Veg", "Rice", "Full"], "img": "img/plain_rice_full.jpeg"},
+  {"id": 56, "cat": "RICE", "name": "Steam Rice (Half) | स्टीम राईस (हाफ)", "price": "60/-", "desc": "Fluffy steamed rice - Half Portion", "tags": ["Veg", "Rice", "Half"], "img": "img/steam_rice_half.jpeg"},
+  {"id": 57, "cat": "RICE", "name": "Steam Rice (Full) | स्टीम राईस (फुल)", "price": "100/-", "desc": "Fluffy steamed rice - Full Portion", "tags": ["Veg", "Rice", "Full"], "img": "img/steam_rice_full.jpeg"},
+  {"id": 58, "cat": "RICE", "name": "Jeera Rice (Half) | जीरा राईस (हाफ)", "price": "60/-", "desc": "Rice tempered with cumin seeds - Half Portion", "tags": ["Veg", "Rice", "Half"], "img": "img/jeera_rice_half.jpeg"},
+  {"id": 59, "cat": "RICE", "name": "Jeera Rice (Full) | जीरा राईस (फुल)", "price": "120/-", "desc": "Rice tempered with cumin seeds - Full Portion", "tags": ["Veg", "Rice", "Full"], "img": "img/jeera_rice_full.jpeg"},
+  {"id": 60, "cat": "RICE", "name": "Veg Pulao | व्हेज पुलाव", "price": "200/-", "desc": "Rice cooked with assorted vegetables and spices", "tags": ["Veg", "Rice"], "img": "img/veg_pulao.jpeg"},
+  {"id": 61, "cat": "RICE", "name": "Masala Rice | मसाला राईस", "price": "150/-", "desc": "Spicy and flavorful masala rice", "tags": ["Veg", "Rice"], "img": "img/masala_rice.jpeg"},
+  {"id": 62, "cat": "RICE", "name": "Dal Khichdi (Half) | डाल खिचडी (हाफ)", "price": "100/-", "desc": "Comforting lentil and rice mix - Half Portion", "tags": ["Veg", "Rice", "Half"], "img": "img/dal_khichdi_half.jpeg"},
+  {"id": 63, "cat": "RICE", "name": "Dal Khichdi (Full) | डाल खिचडी (फुल)", "price": "200/-", "desc": "Comforting lentil and rice mix - Full Portion", "tags": ["Veg", "Rice", "Full"], "img": "img/dal_khichdi_full.jpeg"},
+  {"id": 64, "cat": "RICE", "name": "Egg Rice | अंडा राईस", "price": "150/-", "desc": "Fried rice cooked with scrambled eggs", "tags": ["Non-Veg", "Rice"], "img": "img/egg_rice.jpeg"},
+  {"id": 65, "cat": "RICE", "name": "Dal Khichdi Tadka | डाल खिचडी तडका", "price": "220/-", "desc": "Dal khichdi with an extra spicy tempering", "tags": ["Veg", "Rice"], "img": "img/dal_khichdi_tadka.jpeg"},
+  {"id": 66, "cat": "BIRYANI", "name": "Veg Biryani | व्हेज बिर्याणी", "price": "150/-", "desc": "Aromatic basmati rice cooked with mix veg and spices", "tags": ["Veg", "Biryani"], "img": "img/veg_biryani.jpeg"},
+  {"id": 67, "cat": "BIRYANI", "name": "Chicken Biryani | चिकन बिर्याणी", "price": "200/-", "desc": "Classic chicken biryani with flavorful spices", "tags": ["Non-Veg", "Biryani"], "img": "img/chicken_biryani.jpeg"},
+  {"id": 68, "cat": "BIRYANI", "name": "Mutton Biryani | मटण बिर्याणी", "price": "250/-", "desc": "Rich and spicy mutton biryani", "tags": ["Non-Veg", "Biryani"], "img": "img/mutton_biryani.jpeg"},
+  {"id": 69, "cat": "BIRYANI", "name": "Egg Biryani | अंडा बिर्याणी", "price": "180/-", "desc": "Flavorful biryani with boiled eggs", "tags": ["Non-Veg", "Biryani"], "img": "img/egg_biryani.jpeg"},
+  {"id": 70, "cat": "ANDA KA FUNDA", "name": "Boil Egg Plate | बॉईल अंडा (प्लेट)", "price": "30/-", "desc": "Simple boiled eggs plate", "tags": ["Non-Veg", "Egg"], "img": "img/boil_egg.jpeg"},
+  {"id": 71, "cat": "ANDA KA FUNDA", "name": "Egg Omelette | अंडा ऑम्लेट", "price": "80/-", "desc": "Classic pan-fried egg omelette", "tags": ["Non-Veg", "Egg"], "img": "img/egg_omelette.jpeg"},
+  {"id": 72, "cat": "ANDA KA FUNDA", "name": "Egg Bhurji | अंडा बुर्जी", "price": "80/-", "desc": "Spicy scrambled eggs with onions and tomatoes", "tags": ["Non-Veg", "Egg"], "img": "img/egg_bhurji.jpeg"},
+  {"id": 73, "cat": "ANDA KA FUNDA", "name": "Egg Kheema | अंडा खिमा", "price": "120/-", "desc": "Minced egg preparation in spicy gravy", "tags": ["Non-Veg", "Egg"], "img": "img/egg_kheema.jpeg"},
+  {"id": 74, "cat": "ANDA KA FUNDA", "name": "Egg Masala | अंडा मसाला", "price": "150/-", "desc": "Boiled eggs cooked in a spicy masala gravy", "tags": ["Non-Veg", "Egg"], "img": "img/egg_masala.jpeg"},
+  {"id": 75, "cat": "ANDA KA FUNDA", "name": "Egg Curry | अंडा करी", "price": "150/-", "desc": "Traditional egg curry with aromatic spices", "tags": ["Non-Veg", "Egg"], "img": "img/egg_curry.jpeg"},
+  {"id": 76, "cat": "ANDA KA FUNDA", "name": "Egg Pakoda | अंडा पकोडा", "price": "120/-", "desc": "Deep fried egg fritters", "tags": ["Non-Veg", "Egg"], "img": "img/egg_pakoda.jpeg"},
+  {"id": 77, "cat": "PAPAD", "name": "Roasted Papad | रोस्टेड पापड", "price": "20/-", "desc": "Crispy roasted papad", "tags": ["Veg", "Papad"], "img": "img/roasted_papad_plain.jpeg"},
+  {"id": 78, "cat": "PAPAD", "name": "Fry Papad | फ्राय पापड", "price": "20/-", "desc": "Deep fried crispy papad", "tags": ["Veg", "Papad"], "img": "img/fry_papad.jpeg"},
+  {"id": 79, "cat": "PAPAD", "name": "Masala Papad | मसाला पापड", "price": "50/-", "desc": "Papad with onion, tomato and masala topping", "tags": ["Veg", "Papad"], "img": "img/masala_papad_side.jpeg"},
+  {"id": 80, "cat": "SIDES", "name": "Dahi Plate | दही प्लेट", "price": "50/-", "desc": "Fresh plain curd plate", "tags": ["Veg", "Sides"], "img": "img/dahi_plate.jpeg"},
+              
+  {"id": 81, "cat": "CHICKEN", "name": "Chicken Masala | चिकन मसाला", "price": "180/-", "desc": "Chicken cooked in a spicy traditional gravy", "tags": ["Non-Veg", "Chicken"], "img": "img/chicken_masala.jpeg"},
+  {"id": 82, "cat": "CHICKEN", "name": "Chicken Fry Dry | चिकन फ्राय ड्राय", "price": "230/-", "desc": "Crispy fried chicken with dry Indian spices", "tags": ["Non-Veg", "Chicken"], "img": "img/chicken_fry_dry.jpeg"},
+  {"id": 83, "cat": "CHICKEN", "name": "Chicken Kolhapuri | चिकन कोल्हापुरी", "price": "200/-", "desc": "Spicy chicken curry in authentic Kolhapuri style", "tags": ["Non-Veg", "Chicken", "Spicy"], "img": "img/chicken_kolhapuri.jpeg"},
+  {"id": 84, "cat": "CHICKEN", "name": "Chicken Oil Fry | चिकन ऑईल फ्राय", "price": "250/-", "desc": "Chicken deep fried in oil with spices", "tags": ["Non-Veg", "Chicken"], "img": "img/chicken_oil_fry.jpeg"},
+  {"id": 85, "cat": "CHICKEN", "name": "Chicken Mughlai | चिकन मुघलाई", "price": "300/-", "desc": "Rich and creamy Mughlai style chicken gravy", "tags": ["Non-Veg", "Chicken"], "img": "img/chicken_mughlai.jpeg"},
+  {"id": 86, "cat": "CHICKEN", "name": "Chicken Handi (Half) | चिकन हंडी (हाफ)", "price": "350/-", "desc": "Chicken cooked in a handi - Half Portion", "tags": ["Non-Veg", "Chicken", "Half"], "img": "img/chicken_handi_half.jpeg"},
+  {"id": 87, "cat": "CHICKEN", "name": "Chicken Handi (Full) | चिकन हंडी (फुल)", "price": "700/-", "desc": "Chicken cooked in a handi - Full Portion", "tags": ["Non-Veg", "Chicken", "Full"], "img": "img/chicken_handi_full.jpeg"},
+  {"id": 88, "cat": "CHICKEN", "name": "Butter Chicken (Half) | बटर चिकन (हाफ)", "price": "450/-", "desc": "Creamy butter chicken gravy - Half Portion", "tags": ["Non-Veg", "Chicken", "Half"], "img": "img/butter_chicken_half.jpeg"},
+  {"id": 89, "cat": "CHICKEN", "name": "Butter Chicken (Full) | बटर चिकन (फुल)", "price": "700/-", "desc": "Creamy butter chicken gravy - Full Portion", "tags": ["Non-Veg", "Chicken", "Full"], "img": "img/butter_chicken_full.jpeg"},
+  {"id": 90, "cat": "CHICKEN", "name": "Chicken Tandoori (Half) | चिकन तंदूरी (हाफ)", "price": "250/-", "desc": "Roasted tandoori chicken - Half Portion", "tags": ["Non-Veg", "Chicken", "Tandoor", "Half"], "img": "img/chicken_tandoori_half.jpeg"},
+  {"id": 91, "cat": "CHICKEN", "name": "Chicken Tandoori (Full) | चिकन तंदूरी (फुल)", "price": "500/-", "desc": "Roasted tandoori chicken - Full Portion", "tags": ["Non-Veg", "Chicken", "Tandoor", "Full"], "img": "img/chicken_tandoori_full.jpeg"},
+  {"id": 92, "cat": "CHICKEN", "name": "Kaleji Fry | कलेजी फ्राय", "price": "180/-", "desc": "Fried chicken liver with spices", "tags": ["Non-Veg", "Chicken"], "img": "img/kaleji_fry.jpeg"},
+  {"id": 93, "cat": "CHICKEN", "name": "Kaleji Masala | कलेजी मसाला", "price": "200/-", "desc": "Chicken liver cooked in spicy masala gravy", "tags": ["Non-Veg", "Chicken"], "img": "img/kaleji_masala.jpeg"},
+  {"id": 94, "cat": "CHICKEN", "name": "Kaleji Peta | कलेजी पेटा", "price": "150/-", "desc": "Chicken liver and gizzard preparation", "tags": ["Non-Veg", "Chicken"], "img": "img/kaleji_peta.jpeg"},
+  {"id": 95, "cat": "CHICKEN", "name": "Chicken Mughlai Handi | चिकन मुघलाई हंडी", "price": "700/-", "desc": "Rich Mughlai chicken served in a handi", "tags": ["Non-Veg", "Chicken", "Full"], "img": "img/chicken_mughlai_handi.jpeg"},
+  {"id": 96, "cat": "CHICKEN", "name": "Chicken Malvani | चिकन मालवणी", "price": "400/-", "desc": "Spicy coconut-based Malvani chicken curry", "tags": ["Non-Veg", "Chicken"], "img": "img/chicken_malvani.jpeg"},
+  {"id": 97, "cat": "MUTTON", "name": "Mutton Masala | मटण मसाला", "price": "250/-", "desc": "Tender mutton cooked in spicy gravy", "tags": ["Non-Veg", "Mutton"], "img": "img/mutton_masala.jpeg"},
+  {"id": 98, "cat": "MUTTON", "name": "Mutton Fry Dry | मटण फ्राय ड्राय", "price": "300/-", "desc": "Crispy fried mutton with Indian spices", "tags": ["Non-Veg", "Mutton"], "img": "img/mutton_fry_dry.jpeg"},
+  {"id": 99, "cat": "MUTTON", "name": "Mutton Kolhapuri | मटण कोल्हापुरी", "price": "230/-", "desc": "Extra spicy mutton curry Kolhapuri style", "tags": ["Non-Veg", "Mutton", "Spicy"], "img": "img/mutton_kolhapuri.jpeg"},
+  {"id": 100, "cat": "MUTTON", "name": "Mutton Handi (Half) | मटण हंडी (हाफ)", "price": "450/-", "desc": "Mutton cooked in a handi - Half Portion", "tags": ["Non-Veg", "Mutton", "Half"], "img": "img/mutton_handi_half.jpeg"},
+  {"id": 101, "cat": "MUTTON", "name": "Mutton Handi (Full) | मटण हंडी (फुल)", "price": "800/-", "desc": "Mutton cooked in a handi - Full Portion", "tags": ["Non-Veg", "Mutton", "Full"], "img": "img/mutton_handi_full.jpeg"},
+  {"id": 102, "cat": "MUTTON", "name": "Mutton Malvani (Half) | मटण मालवणी (हाफ)", "price": "450/-", "desc": "Traditional Malvani mutton curry - Half Portion", "tags": ["Non-Veg", "Mutton", "Half"], "img": "img/mutton_malvani_half.jpeg"},
+  {"id": 103, "cat": "MUTTON", "name": "Mutton Malvani (Full) | मटण मालवणी (फुल)", "price": "800/-", "desc": "Traditional Malvani mutton curry - Full Portion", "tags": ["Non-Veg", "Mutton", "Full"], "img": "img/mutton_malvani_full.jpeg"},
+
+  {"id": 104, "cat": "CHICKEN STARTER", "name": "Chicken Chilli | चिकन चिल्ली", "price": "220/-", "desc": "Spicy and crispy fried chicken tossed in chilli sauce", "tags": ["Non-Veg", "Starter"], "img": "img/chicken_chilli.jpeg"},
+  {"id": 105, "cat": "CHICKEN STARTER", "name": "Kaleji Fry | कलेजी फ्राय", "price": "150/-", "desc": "Pan-fried chicken liver with Indian spices", "tags": ["Non-Veg", "Starter"], "img": "img/kaleji_fry_starter.jpeg"},
+  {"id": 106, "cat": "CHICKEN STARTER", "name": "Kaleji Masala | कलेजी मसाला", "price": "200/-", "desc": "Chicken liver cooked in a thick spicy masala", "tags": ["Non-Veg", "Starter"], "img": "img/kaleji_masala_starter.jpeg"},
+  {"id": 107, "cat": "CHICKEN STARTER", "name": "Kaleji Peta | कलेजी पेटा", "price": "150/-", "desc": "Spicy preparation of chicken liver and gizzards", "tags": ["Non-Veg", "Starter"], "img": "img/kaleji_peta_starter.jpeg"},
+  {"id": 108, "cat": "CHICKEN STARTER", "name": "Chicken Garlic | चिकन गार्लिक", "price": "250/-", "desc": "Chicken sautéed with a strong punch of garlic and spices", "tags": ["Non-Veg", "Starter"], "img": "img/chicken_garlic.jpeg"},
+  {"id": 109, "cat": "CHICKEN STARTER", "name": "Chicken 65 | चिकन 65", "price": "220/-", "desc": "Classic deep-fried spicy chicken starter", "tags": ["Non-Veg", "Starter"], "img": "img/chicken_65.jpeg"},
+  {"id": 110, "cat": "CHICKEN STARTER", "name": "Chicken Oil Fry | चिकन ऑईल फ्राय", "price": "250/-", "desc": "Chicken deep fried in oil with a blend of local spices", "tags": ["Non-Veg", "Starter"], "img": "img/chicken_oil_fry_starter.jpeg"},
+  {"id": 111, "cat": "CHICKEN STARTER", "name": "Chicken Fry | चिकन फ्रay", "price": "250/-", "desc": "Crispy and juicy fried chicken", "tags": ["Non-Veg", "Starter"], "img": "img/chicken_fry.jpeg"},
+  {"id": 112, "cat": "CHICKEN STARTER", "name": "Chicken Tandoori (Half) | चिकन तंदूरी (हाफ)", "price": "250/-", "desc": "Clay oven roasted chicken - Half portion", "tags": ["Non-Veg", "Starter", "Half"], "img": "img/chicken_tandoori_half_starter.jpeg"},
+  {"id": 113, "cat": "CHICKEN STARTER", "name": "Chicken Tandoori (Full) | चिकन तंदूरी (फुल)", "price": "480/-", "desc": "Clay oven roasted chicken - Full portion", "tags": ["Non-Veg", "Starter", "Full"], "img": "img/chicken_tandoori_full_starter.jpeg"},
+
+
+
+
+
+
+              
           
    ];
         
